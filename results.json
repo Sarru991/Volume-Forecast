@@ -1,0 +1,52 @@
+{
+  "intervals_tested": 7168,
+  "days_tested": 224,
+  "folds": 8,
+  "methods": {
+    "naive": {
+      "interval_wape": 0.1854333001130981,
+      "daily_wape": 0.0938742259498561,
+      "special_wape": 0.25585646580907245,
+      "bias": -0.00022115718396918357
+    },
+    "seasonal": {
+      "interval_wape": 0.14603862692182792,
+      "daily_wape": 0.07245627246565065,
+      "special_wape": 0.25803994583615436,
+      "bias": -0.0015725955455023906
+    },
+    "ml": {
+      "interval_wape": 0.1293646490514205,
+      "daily_wape": 0.054562716788737406,
+      "special_wape": 0.1357836316428231,
+      "bias": -0.019228491241640125
+    }
+  },
+  "staffing": [
+    {
+      "method": "naive",
+      "within_2_agents_pct": 65.7,
+      "short_3plus_intervals": 1243,
+      "over_3plus_intervals": 1218,
+      "agent_intervals_short": 7923,
+      "agent_intervals_over": 7894
+    },
+    {
+      "method": "seasonal",
+      "within_2_agents_pct": 76.4,
+      "short_3plus_intervals": 858,
+      "over_3plus_intervals": 835,
+      "agent_intervals_short": 6219,
+      "agent_intervals_over": 6240
+    },
+    {
+      "method": "ml",
+      "within_2_agents_pct": 80.4,
+      "short_3plus_intervals": 846,
+      "over_3plus_intervals": 558,
+      "agent_intervals_short": 6358,
+      "agent_intervals_over": 4699
+    }
+  ],
+  "best_method": "ml"
+}
